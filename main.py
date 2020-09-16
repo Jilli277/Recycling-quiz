@@ -2,12 +2,10 @@ import time
 
 easy = [
     "What is the number 1 most polluted synthetic solid?", "__1__",
-    "\nCan you still recycle napkins and paper towels that are contaminated with food?",
-    "__2__", "\nWhat planet bears the name of the Roman god of war?", "__3__",
-    "\nWhich world ocean has a name that means peace?", "The", "__4__",
-    "Ocean\n"
+    "\nReduce, Reuse, __2__", "\nCan aluminium foil be recycled?", "__3__",
+    "\n\n"
 ]
-easy_answers = ["Plastic", "No", "Mars", "Pacific"]
+easy_answers = ["Plastic", "Reuse", "Mars", "Pacific"]
 medium = [
     "Which planet has the most moons?", "__1__",
     "\nA Corona is another word for the atmosphere of what celestial body? ",
@@ -48,7 +46,7 @@ print("        Easy, Medium, or Hard            ")
 print("                                         ")
 players_choice = input(" Please type in your selection: ")
 
-
+score = 0
 def dif_selection(players_choice):
     """ Takes the players difficulty selection and then loads the proper conditions for the gameself.
     input;
@@ -82,11 +80,11 @@ def dif_selection(players_choice):
 
 questions, answers = dif_selection(players_choice)
 spaces_5 = """
-./\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\.
-.                                                              .
-.                                                              .
-.______________________________________________________________.
-"""
+   __
+  /__\
+ |    |
+ |    |
+ |____|"""
 print(spaces_5)
 
 
@@ -129,7 +127,7 @@ def play_game(questions, answers, spaces_5):
     """
     space = " "
     ques_num = 1
-    print("     Welcome to puzzler, a science themed trivia game!\n\n\n")
+    print("     Welcome to the Recycling game, a pollution/global warming awareness themed trivia game!\n\n\n")
     for answer in answers:
         ques_num = attempt_check(ques_num, questions, answers)
         print(spaces_5)
