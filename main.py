@@ -1,11 +1,10 @@
 import time
 
-easy = [
-    "What is the number 1 most polluted synthetic solid?", "__1__",
-    "\nReduce, Reuse, __2__", "\nCan aluminium foil be recycled?", "__3__",
-    "\n\n"
-]
-easy_answers = ["Plastic", "Reuse", "Mars", "Pacific"]
+easy = ["What is the number 1 sythetic solid that is a big contributor to pollution?","__1__",
+    "\nReduce, reuse,","__2__",
+    "\nCan you recycle aluminuim foil?","__3__",
+   "\nWhat is another name for waste water?", "", "__4__","\n"]
+easy_answers = ["Plastic","Recycle","Yes","Sewage"]
 medium = [
     "Which planet has the most moons?", "__1__",
     "\nA Corona is another word for the atmosphere of what celestial body? ",
@@ -46,7 +45,6 @@ print("        Easy, Medium, or Hard            ")
 print("                                         ")
 players_choice = input(" Please type in your selection: ")
 
-score = 0
 def dif_selection(players_choice):
     """ Takes the players difficulty selection and then loads the proper conditions for the gameself.
     input;
@@ -57,7 +55,7 @@ def dif_selection(players_choice):
     """
     if players_choice.lower() == "easy":
         questions, answers = easy, easy_answers
-        print("       Easy mode selected")
+        print(" Easy mode selected")
         time.sleep(1.1)
         return (questions, answers)
     elif players_choice.lower() == "medium":
@@ -79,12 +77,7 @@ def dif_selection(players_choice):
 
 
 questions, answers = dif_selection(players_choice)
-spaces_5 = """
-   __
-  /__\
- |    |
- |    |
- |____|"""
+spaces_5 = """ """
 print(spaces_5)
 
 
