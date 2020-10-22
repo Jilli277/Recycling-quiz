@@ -6,14 +6,14 @@ easy = ["What is the number 1 sythetic solid that is a big contributor to pollut
    "\nWhat is another name for waste water?", "", "__4__","\n"]
 easy_answers = ["Plastic","Recycle","Yes","Sewage"]
 medium = [
-    "Which planet has the most moons?", "__1__",
-    "\nA Corona is another word for the atmosphere of what celestial body? ",
+    "Does one wrong item in a recycling bin mean the whole bag will be sent to landfill?", "__1__",
+    "\nDoes recycling really save energy? ",
     "The", "__2__",
-    "\nWhat common household product is otherwise known as Sodium Chloride? ",
-    "__3__", "\n186,282 miles per second is the speed of what in a vacuum?",
+    "\nHow much energy can you save by recycling paper?",
+    "__3__", "\n",
     "__4__", "\n"
 ]
-medium_answers = ["Jupiter", "Sun", "Salt", "Light"]
+medium_answers = ["YES", "yes", "Salt", "Light"]
 hard = [
     "Which galaxy is the closest to the Milky Way?", "The", "__1__", "Galaxy",
     "\nWhat is the unit of power that is roughly equal to 746 watts?", "__2__",
@@ -44,6 +44,7 @@ print("      Please select a difficulty         ")
 print("        Easy, Medium, or Hard            ")
 print("                                         ")
 players_choice = input(" Please type in your selection: ")
+
 
 def dif_selection(players_choice):
     """ Takes the players difficulty selection and then loads the proper conditions for the gameself.
@@ -99,10 +100,13 @@ def attempt_check(ques_num, questions, answers):
     blank = "__" + str(ques_num) + "__"
     guess = str(
         input("What word should replace? " + "__" + str(ques_num) + "__"))
+    score = 0
     answer = answers[ques_num - 1]
     if guess.lower() == answer.lower():
         questions[questions.index(blank)] = answer
-        print("\n\nCORRECT!\n\n")
+        score += 1
+        print("\n\nCORRECT!\n")
+        print("Score:", score)
         ques_num += 1
         return ques_num
     else:
