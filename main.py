@@ -8,17 +8,17 @@ easy_answers = ["Plastic","Recycle","Yes","Sewage"]
 medium = [
     "Does one wrong item in a recycling bin mean the whole bag will be sent to landfill?", "__1__",
     "\nDoes recycling really save energy? ",
-    "The", "__2__",
-    "\nHow much energy can you save by recycling paper?",
-    "__3__", "\n",
+    "", "__2__",
+    "\nHow much energy (in percentage) can you save by recycling paper?",
+    "__3__", "\nDoes plastic fully break down and eventually disintergrate?",
     "__4__", "\n"
 ]
-medium_answers = ["YES", "yes", "Salt", "Light"]
+medium_answers = ["YES", "yes", "60%", "No"]
 hard = [
     "Which galaxy is the closest to the Milky Way?", "The", "__1__", "Galaxy",
     "\nWhat is the unit of power that is roughly equal to 746 watts?", "__2__",
     "\nWhat planet do the moons Titan, Enceladus, Mimas, and Iapetus orbit?",
-    "__3__", "\nWhat was the name of the first U.S. space station?", "__4__",
+    "__3__", "\nWhat was the name of the first U.S. space station?", "__4__", 
     "\n"
 ]
 hard_answers = ["Andromeda", "Horsepower", "Saturn", "Skylab"]
