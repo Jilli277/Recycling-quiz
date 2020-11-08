@@ -1,3 +1,6 @@
+#Shivani Rana and Jill Pa'u
+#3/11/20
+#Recycling Game
 import time
 
 easy = ["What is the number 1 sythetic solid that is a big contributor to pollution?","__1__",
@@ -15,13 +18,13 @@ medium = [
 ]
 medium_answers = ["YES", "yes", "60%", "No"]
 hard = [
-    "Which galaxy is the closest to the Milky Way?", "The", "__1__", "Galaxy",
-    "\nWhat is the unit of power that is roughly equal to 746 watts?", "__2__",
-    "\nWhat planet do the moons Titan, Enceladus, Mimas, and Iapetus orbit?",
-    "__3__", "\nWhat was the name of the first U.S. space station?", "__4__", 
+    "How many people said that they have at least 5 non-reusable drinks in their dorm? [51%,61%, 71%, 91%]" ,
+    "\nOut of the drinks people keep in their room 71% are plastic, [True/False]",
+    "\nThe average person generates over _____ of trash every day. [3Kg, 4Kg, 1Kg, 2Kg]",
+     "\nPlastic takes _____ years to decompose [350,250,9000,1000]",
     "\n"
 ]
-hard_answers = ["Andromeda", "Horsepower", "Saturn", "Skylab"]
+hard_answers = ["61%", "True", "2Kg", "1000"]
 
 print("\    /\    /  __  |  __  _   _ _   __    ")
 print(" \  /  \  /  /__\ | /   / \ | | | /__\   ")
@@ -48,7 +51,7 @@ players_choice = input(" Please type in your selection: ")
 
 def dif_selection(players_choice):
     """ Takes the players difficulty selection and then loads the proper conditions for the gameself.
-    input;
+    input; 
     players_choice: STR input from user selecting a difficulty level
     output:
     questions: the questions corresponding to the players difficulty choice.
